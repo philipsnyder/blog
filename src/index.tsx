@@ -5,8 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
-import Detail from "./detail";
-import List from "./List";
+import Detail from "./feature/contact/contact-detail/detail";
+import List from "./feature/contact/contact-list/List";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
         element: <List />,
       },
       {
-        path: "/detail",
+        path: "/detail/:id",
         element: <Detail />,
       },
     ],
@@ -36,7 +38,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
