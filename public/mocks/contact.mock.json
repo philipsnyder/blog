@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "firstName": "Gretchen",
+    "lastName": "Lovely",
+    "street": "111 Elm Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80202",
+    "phone": "(333)333-3333",
+    "birthday": "5/17/1980"
+  },
+  {
+    "id": "2",
+    "firstName": "Chloe",
+    "lastName": "Dinger",
+    "street": "1121 Pine Cr",
+    "city": "Arvada",
+    "state": "CO",
+    "zip": "80400",
+    "phone": "(333)123-4567",
+    "birthday": "4/21/11"
+  },
+  {
+    "id": "3",
+    "firstName": "Josie",
+    "lastName": "Dingleberry",
+    "street": "16 Crazy Rd",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "40808",
+    "phone": "(417)888-8282",
+    "birthday": "12/16/2015"
+  },
+  {
+    "id": "4",
+    "firstName": "Phil",
+    "lastName": "Dadbod",
+    "street": "151 16th St.",
+    "city": "Crestone",
+    "state": "CO",
+    "zip": "14141",
+    "phone": "(720)517-8282",
+    "birthday": "4/16/1979"
+  },
+  {
+    "id": "5",
+    "firstName": "Jake",
+    "lastName": "Smith",
+    "street": "123 Elm Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80202",
+    "phone": "(333)333-3333",
+    "birthday": "5/17/1980"
+  },
+  {
+    "id": "6",
+    "firstName": "Henry",
+    "lastName": "Bottlenose",
+    "street": "111 Elm Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80202",
+    "phone": "(333)333-3333",
+    "birthday": "5/17/1980"
+  },
+  {
+    "id": "7",
+    "firstName": "Pinky",
+    "lastName": "Thumbs",
+    "street": "111 Elm Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80202",
+    "phone": "(333)333-3333",
+    "birthday": "5/17/1980"
+  },
+  {
+    "id": "8",
+    "firstName": "Rose",
+    "lastName": "McBride",
+    "street": "111 Elm Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80202",
+    "phone": "(333)333-3333",
+    "birthday": "5/17/1980"
+  }
+]

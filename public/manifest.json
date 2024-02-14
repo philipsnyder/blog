@@ -1,6 +1,6 @@
 {
-  "short_name": "Rolodex App",
-  "name": "Phil's Rolodex React App",
+  "short_name": "Blog App",
+  "name": "Phil's Blog React App",
   "icons": [
     {
       "src": "favicon.ico",
