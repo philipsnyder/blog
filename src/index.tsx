@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./styles/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
-import Detail from "./feature/contact/contact-detail/detail";
-import List from "./feature/contact/contact-list/List";
-import { Provider } from "react-redux";
-import { store } from "./store";
+import About from "./feature/contact/about/about";
+import DevBlogContainer from "./feature/contact/dev-blog/dev-blog-container";
+// import { Provider } from "react-redux";
+// import { store } from "./store";
+import HomeContainer from "./feature/home/home-container";
 
 const router = createBrowserRouter([
   {
@@ -18,16 +19,16 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <List />,
+        element: <HomeContainer />,
         // loader: listLoader
       },
       {
-        path: "/list",
-        element: <List />,
+        path: "/dev-blog",
+        element: <DevBlogContainer />,
       },
       {
-        path: "/detail/:id",
-        element: <Detail />,
+        path: "/about",
+        element: <About />,
       },
     ],
   },
@@ -38,9 +39,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+    {/* <Provider store={store}> */}
+    <RouterProvider router={router} />
+    {/* </Provider> */}
   </React.StrictMode>
 );
 
