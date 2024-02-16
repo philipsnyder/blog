@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "red-rocks": "url('/redrocks.jpeg')",
+        "angry-comps": "url('/ac_edit2.png')",
       },
     },
   },
