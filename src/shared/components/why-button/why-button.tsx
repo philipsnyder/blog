@@ -15,11 +15,12 @@ export function WhyButton({
       <Button
         sx={{
           border: 3,
-          width: "24rem",
+          // width: "24rem",
           fontWeight: "900",
           fontSize: "28px",
           color: "black",
           backgroundColor: "white",
+          marginBottom: 30,
           ":hover": {
             backgroundColor: "white",
           },
