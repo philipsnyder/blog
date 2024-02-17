@@ -1,33 +1,33 @@
 import { Button, Collapse } from "@mui/material";
 import { useState } from "react";
 import { Nav } from "../../../shared/components/nav/nav";
-import { WhyButton } from "../../../shared/components";
+import { WhyButton, WhyInfoContainer } from "../../../shared/components";
 
 export default function HomeHeader() {
   const [showContainer, setShowContainer] = useState<boolean>(false);
 
-  function handleDevBlogWhyClick() {
+  function handleWhyBtnClick() {
     setShowContainer(!showContainer);
   }
 
   return (
     <>
-      <Nav></Nav>
-      <div
-        className="bg-[url('/public/burger.jpeg')] min-h-screen bg-fixed bg-top bg-no-repeat bg-cover relative opacity-75 flex items-end justify-center"
-        aria-label="computer flying and eating a burger"
-      >
-        <div className="mb-72">
-          <Collapse in={showContainer}>
-            <div className="w-36 h-24 bg-white">Booty</div>
-          </Collapse>
-          {!showContainer && (
-            <WhyButton
-              label="Why the dev blog?"
-              onClick={handleDevBlogWhyClick}
-              onTouchEnd={handleDevBlogWhyClick}
-            ></WhyButton>
-          )}
+      <div className="relative w-full">
+        <div
+          className="bg-[url('/public/burger.jpeg')] min-h-screen bg-fixed bg-top bg-no-repeat bg-cover opacity-75 flex justify-center items-end"
+          aria-label="computer flying and eating a burger"
+        >
+          <div>
+            {showContainer ? (
+              <WhyInfoContainer onClick={handleWhyBtnClick}></WhyInfoContainer>
+            ) : (
+              <WhyButton
+                label="Why the dev blog?"
+                onClick={handleWhyBtnClick}
+                onTouchEnd={handleWhyBtnClick}
+              ></WhyButton>
+            )}
+          </div>
         </div>
       </div>
     </>
