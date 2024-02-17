@@ -1,12 +1,13 @@
-import HomeHeader from "./components/home-header";
+import HomeHeader from "./components/home-header/home-header";
+import { WhySite } from "./components/why-section/why-site";
 
 export default function HomeContainer() {
   return (
     <>
       <HomeHeader></HomeHeader>
-      <section className="mx-8">
-        {/* <BlogPaper className="w-full h-48 bg-white -mt-16 z-10"></BlogPaper> */}
-      </section>
+      <div className="m-12">
+        <WhySite id="whySite"></WhySite>
+      </div>
     </>
   );
 }
