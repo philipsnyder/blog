@@ -5,8 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
-import About from "./feature/contact/about/about";
-import DevBlogContainer from "./feature/contact/dev-blog/dev-blog-container";
+import About from "./feature/about/about";
+import AddBlog from "./feature/add-blog/add-blog";
+import DevBlogContainer from "./feature/dev-blog/dev-blog-container";
 // import { Provider } from "react-redux";
 // import { store } from "./store";
 import HomeContainer from "./feature/home/home-container";
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/add-blog",
+        element: <AddBlog />,
       },
     ],
   },
